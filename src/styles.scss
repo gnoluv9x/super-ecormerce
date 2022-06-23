@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~primeflex/primeflex.css";
+@import "~primeng/resources/themes/saga-blue/theme.css";
+@import "~primeicons/primeicons.css";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@400;700&family=Poppins:wght@300;400;500;700;800&display=swap");
 
 :root {
@@ -19,6 +21,18 @@
   --sky-blue-gradient: linear-gradient(121.53deg, #f3f9ff 0%, #f1f0ff 100%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
