@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~primeflex/primeflex.css";
+@import "~primeng/resources/themes/saga-blue/theme.css";
+@import "~primeicons/primeicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@400;700&family=Poppins:wght@300;400;500;700;800&display=swap");
+
+:root {
+  --pink-color: #fb2e86;
+  --red-color: #fb2448;
+  --blue-color: #2f1ac4;
+  --off-blue-color: #151875;
+  --off-navy-blue-color: #3f509e;
+  --navy-blue-color: #151875;
+  --pantone-purple-color: #e0d3f5;
+  --purple-color: #7e33e0;
+  --off-purple-color: #9f63b5;
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-lato: "Lato", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+
+  --sky-blue-gradient: linear-gradient(121.53deg, #f3f9ff 0%, #f1f0ff 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
