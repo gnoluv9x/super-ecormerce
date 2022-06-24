@@ -1,20 +1,27 @@
 <section class="trending container my-8">
   <h2 class="text-center trending__title">Trending Products</h2>
-  <mat-grid-list cols="4">
-    <mat-grid-tile *ngFor="let product of trendProductsList">
+  <div class="trending__card--wrapper">
+    <div *ngFor="let product of trendProductsList">
       <mat-card class="trending__card">
         <img
           mat-card-image
+          class="trending__card--img"
           src="{{ product.image }}"
           alt="{{ product.title }}"
         />
         <mat-card-content>
-          <h3>{{ product.title }}</h3>
-          <p class="trending__card--desc">
+          <h3 class="text-center font-bold text-2xl mt-4 h-5rem">
+            {{ product.title }}
+          </h3>
+          <p class="trending__card--desc truncate">
             {{ product.description }}
           </p>
         </mat-card-content>
+        <div class="flex justify-content-between align-items-center w-9">
+          <button mat-button class="btn-buy">Buy</button>
+          <p class="mb-0">{{ product.price }}$</p>
+        </div>
       </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+    </div>
+  </div>
 </section>

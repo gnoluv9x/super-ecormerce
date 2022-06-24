@@ -5,14 +5,44 @@ $shadow: 0 1px 10px 0px #ccc;
     font-family: "Josefin Sans";
     font-size: 42px;
     line-height: 49px;
+    margin-bottom: 55px;
   }
   &__card {
     padding: 10px;
     box-shadow: $shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    width: 350px;
+    height: 400px;
+    .btn-buy {
+      background-color: #fb2e85;
+      color: #fff;
+      padding: 0 10px;
+    }
+    &--wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    & &--img {
+      width: 100px;
+      margin: 40px 0;
+      height: 100px;
+      &:hover {
+        transform: scale(2, 2);
+        transition: all 0.2s linear;
+      }
+    }
     &--desc {
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
+      width: 300px;
+      text-transform: capitalize;
+      text-align: center;
     }
   }
 }

@@ -14,6 +14,8 @@ import SwiperCore, {
   Virtual,
   Zoom,
 } from 'swiper';
+import { MatButtonModule } from '@angular/material/button';
+
 import { SwiperModule } from 'swiper/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -62,6 +64,7 @@ SwiperCore.use([
     MatGridListModule,
     HttpClientModule,
     MatCardModule,
+    MatButtonModule,
   ],
   providers: [
     {
