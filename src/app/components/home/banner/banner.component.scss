@@ -1,0 +1,47 @@
+.banner-container {
+  background-color: #f2f0ff;
+  .banner-slice {
+    justify-content: center;
+    display: flex;
+    padding: 36px 0;
+  }
+  .banner {
+    padding: 36px 0;
+    display: flex;
+    align-items: center;
+    &__img {
+      width: 629px;
+      &--minion {
+        width: 200px;
+        height: 300px;
+        margin-top: 130px;
+      }
+    }
+    &__desc {
+      .text {
+        color: #8a8fb9;
+        margin-bottom: 30px;
+      }
+      &--subtitle {
+        font-weight: 700;
+        font-family: "Lato";
+        font-size: 16px;
+        color: #fb2e86;
+      }
+      &--title {
+        font-family: "Josefin Sans";
+        font-size: 53px;
+        line-height: 82px;
+
+        color: #000000;
+      }
+      .btn {
+        height: 40px;
+        padding: 0 25px;
+        border: none;
+        background: #fb2e86;
+        color: #fff;
+      }
+    }
+  }
+}

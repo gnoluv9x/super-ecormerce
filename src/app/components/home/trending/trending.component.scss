@@ -1,0 +1,18 @@
+$shadow: 0 1px 10px 0px #ccc;
+.trending {
+  &__title {
+    color: #151875;
+    font-family: "Josefin Sans";
+    font-size: 42px;
+    line-height: 49px;
+  }
+  &__card {
+    padding: 10px;
+    box-shadow: $shadow;
+    &--desc {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+}

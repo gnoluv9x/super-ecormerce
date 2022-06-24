@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~primeflex/primeflex.css";
-@import "~primeng/resources/themes/saga-blue/theme.css";
 @import "~primeicons/primeicons.css";
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Lato:wght@400;700&family=Poppins:wght@300;400;500;700;800&display=swap");
-
+@import "swiper/scss";
+@import "swiper/scss/navigation";
+@import "swiper/scss/pagination";
 :root {
   --pink-color: #fb2e86;
   --red-color: #fb2448;
@@ -35,4 +36,13 @@ html {
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

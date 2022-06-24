@@ -1,0 +1,68 @@
+<section class="banner-container">
+  <swiper
+    [loop]="true"
+    [allowTouchMove]="true"
+    [autoplay]="{ delay: 1000, disableOnInteraction: false }"
+    [pagination]="{ clickable: true }"
+  >
+    <ng-template swiperSlide>
+      <div class="banner">
+        <img
+          src="../../../assets/images/drone.png"
+          class="banner__img mx-8"
+          alt="Drone"
+        />
+        <div class="banner__desc">
+          <h3 class="banner__desc--subtitle">Best choice for you...</h3>
+          <h2 class="banner__desc--title">
+            New Furniture Collection<br />
+            Trends in 2022
+          </h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            Magna in est adipiscing in phasellus non in justo.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button class="btn">Shop now</button>
+        </div>
+      </div>
+    </ng-template>
+    <ng-template class="swiper-slide" swiperSlide
+      ><div class="banner">
+        <img
+          src="../../../assets/images/nike.png"
+          class="banner__img mx-8"
+          alt="Drone"
+        />
+        <div class="banner__desc">
+          <h3 class="banner__desc--subtitle">Many diversity products...</h3>
+          <h2 class="banner__desc--title">Order whole the world</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            Magna in est adipiscing in phasellus non in justo.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button class="btn">Shop now</button>
+        </div>
+      </div></ng-template
+    >
+    <ng-template swiperSlide
+      ><div class="banner-slice">
+        <div class="banner__desc">
+          <h3 class="banner__desc--subtitle">Thousands of Preferential...</h3>
+          <h2 class="banner__desc--title">Receive 20$ for new users</h2>
+          <p class="text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            Magna in est adipiscing in phasellus non in justo.<br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <button class="btn">Shop now</button>
+        </div>
+        <img
+          src="../../../assets/images/minions.png"
+          class="banner__img--minion mx-8"
+          alt="Drone"
+        /></div
+    ></ng-template>
+  </swiper>
+</section>
