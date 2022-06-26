@@ -32,6 +32,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { CategoriesComponent } from './components/home/categories/categories.component';
 import { ShopnowComponent } from './components/home/shopnow/shopnow.component';
+import { LoginComponent } from './pages/login/login.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { ProductDetailComponent } from './components/products/product-detail/product-detail.component';
 
 // install Swiper components
 SwiperCore.use([
@@ -58,6 +63,11 @@ SwiperCore.use([
     TrendingComponent,
     CategoriesComponent,
     ShopnowComponent,
+    LoginComponent,
+    BlogComponent,
+    ProductsComponent,
+    CartComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
