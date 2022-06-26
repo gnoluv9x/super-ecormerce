@@ -11,6 +11,8 @@
     &--img {
       z-index: 1;
       position: relative;
+      border-radius: 50%;
+      transition: all 0.2s linear;
       img {
         width: 300px;
         height: 300px;
@@ -26,6 +28,9 @@
         border-radius: 50%;
         background-color: #b59af2;
         z-index: -1;
+      }
+      &:hover {
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
       }
     }
     &--title {
