@@ -4,18 +4,18 @@ import { ResponseApi } from 'src/app/model/response';
 import { ProductsService } from 'src/app/services/products.service';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss'],
+  selector: 'app-categories',
+  templateUrl: './categories.component.html',
+  styleUrls: ['./categories.component.scss'],
 })
-export class FooterComponent implements OnInit {
-  public categoriesList: Array<Category> = [];
+export class CategoriesComponent implements OnInit {
+  public categoriesList: Category[] = [];
   constructor(private ProductsService: ProductsService) {}
 
   ngOnInit(): void {
     this.ProductsService.getAllCategories().subscribe({
       next: (data: ResponseApi<Category>) => {
-        this.categoriesList = data.data;
+        this.categoriesList = data.data.slice(0, 4);
       },
     });
   }

@@ -1,0 +1,13 @@
+<section class="category container mb-8">
+  <h2 class="category__title">Top categories</h2>
+  <div class="flex justify-content-center align-items-center gap-4">
+    <div class="category__item" *ngFor="let item of categoriesList">
+      <div class="category__item--img">
+        <img src="{{ item.img }}" alt="{{ item.title }}" />
+      </div>
+      <h3 class="capitalize text-center mt-4 text-2xl category__item--title">
+        {{ item.title }}
+      </h3>
+    </div>
+  </div>
+</section>

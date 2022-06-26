@@ -1,1 +1,56 @@
-<p>footer works!</p>
+<footer>
+  <div class="footer">
+    <div>
+      <h2 class="footer__logo">SuperEcomerce</h2>
+      <div>
+        <input
+          type="text"
+          class="footer__signup"
+          placeholder="Enter Email Address"
+        />
+        <button class="footer__signup--btn">Sign Up</button>
+      </div>
+      <p class="mb-2 mt-6 text-muted">Contact info</p>
+      <p class="text-muted">98 Hoang Quoc Viet, Cau Giay, Ha Noi, Viet Nam</p>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__item--title">Categories</h3>
+      <ul class="list-none">
+        <li
+          *ngFor="let item of categoriesList"
+          class="capitalize text-muted mb-2"
+        >
+          {{ item.title }}
+        </li>
+      </ul>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__item--title">Customer Care</h3>
+      <ul class="list-none">
+        <li class="capitalize text-muted mb-2">My Account</li>
+        <li class="capitalize text-muted mb-2">Discount</li>
+      </ul>
+    </div>
+    <div class="footer__item">
+      <h3 class="footer__item--title">Pages</h3>
+      <ul class="list-none">
+        <li class="capitalize text-muted mb-2">Blog</li>
+        <li class="capitalize text-muted mb-2">Category</li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright flex justify-content-between align-item-center">
+    <p class="text-muted mb-0">©KLGroup - All Rights Reserved</p>
+    <ul class="list-none flex gap-2">
+      <li>
+        <a href="" class="social-icon"><i class="pi pi-facebook"></i></a>
+      </li>
+      <li>
+        <a href="" class="social-icon"><i class="pi pi-telegram"></i></a>
+      </li>
+      <li>
+        <a href="" class="social-icon"><i class="pi pi-twitter"></i></a>
+      </li>
+    </ul>
+  </div>
+</footer>

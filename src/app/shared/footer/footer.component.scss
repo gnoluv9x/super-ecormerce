@@ -1,0 +1,48 @@
+.footer {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 0;
+  background: #eeeffb;
+
+  &__item {
+    &--title {
+      font-family: "Josefin Sans";
+      font-size: 22px;
+
+      color: #000000;
+    }
+  }
+  &__logo {
+    font-family: "Josefin Sans";
+    font-size: 38px;
+
+    color: #000000;
+  }
+  &__signup {
+    height: 40px;
+    width: 317px;
+    border: 1px solid #e7e6ef;
+    padding: 0 10px;
+    &--btn {
+      height: 40px;
+      padding: 0 15px;
+      border: none;
+      background: #fb2e86;
+      color: #fff;
+    }
+  }
+}
+.text-muted {
+  color: #000000;
+  opacity: 0.5;
+}
+.copyright {
+  padding: 17px 377px;
+  background: #e7e4f8;
+  .social-icon {
+    color: #151875;
+    font-size: 20px;
+  }
+}

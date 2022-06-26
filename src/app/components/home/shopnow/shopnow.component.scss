@@ -1,0 +1,23 @@
+.startShop {
+  background-image: url(../../../../assets/images/shopnow.svg);
+  height: 462px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    margin: auto;
+    font-family: "Josefin Sans";
+    font-size: 35px;
+    color: #151875;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  &__btn {
+    background-color: #fb2e85;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 0;
+  }
+}

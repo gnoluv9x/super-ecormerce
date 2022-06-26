@@ -30,6 +30,8 @@ import { HeaderTopComponent } from './shared/header-top/header-top.component';
 import { LayoutComponent } from './shared/layout/layout.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
+import { CategoriesComponent } from './components/home/categories/categories.component';
+import { ShopnowComponent } from './components/home/shopnow/shopnow.component';
 
 // install Swiper components
 SwiperCore.use([
@@ -54,6 +56,8 @@ SwiperCore.use([
     BannerComponent,
     HomeComponent,
     TrendingComponent,
+    CategoriesComponent,
+    ShopnowComponent,
   ],
   imports: [
     BrowserModule,
