@@ -12,7 +12,7 @@ export class TrendingComponent implements OnInit {
   public trendProductsList: Product[] = [];
   public loading: boolean = false;
   public page: number = 1;
-  public size: number = 10;
+  public size: number = 9;
   constructor(private ProductsService: ProductsService) {}
 
   ngOnInit(): void {
